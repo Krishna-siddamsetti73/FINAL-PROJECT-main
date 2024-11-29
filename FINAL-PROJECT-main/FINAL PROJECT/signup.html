@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ds9icar9t/image/upload/v1724175281/elv65cxcqqkw02yp4yox.png" alt="Logo">
+            </div>
+            <form method="POST" action="process_signup.php" id="signupForm">
+                <div class="input-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="button" id="verifyEmailBtn" onclick="sendOTP()">Verify Email</button>
+                </div>
+                <div class="input-group otp-group" style="display: none;">
+                    <label for="otp">Enter OTP*</label>
+                   
+                    <input type="text" id="otpInput" placeholder="Enter OTP" required>
+                    <button onclick="verifyOTP()">Verify OTP</button>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <button id="sub" style="color:white" disabled onclick="home()">SIGN UP</button>
+                </div>
+            </form>
+            <div class="social-signup">
+                <p>or sign up with</p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://i.pinimg.com/564x/bb/90/24/bb902442d0880e99732aa1aada0c08de.jpg" alt="Facebook"></a>
+                    <a href="#" onclick="googleSignIn()"><img src="https://i.pinimg.com/564x/8b/56/31/8b563165d8293f0f0e5372cb8452e4dc.jpg" alt="Google" ></a>
+                    <a href="#"><img src="https://i.pinimg.com/564x/cf/11/eb/cf11ebcc0a874e3ad3830431f7b0ab58.jpg" alt="Apple"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="authent.js"></script>
+</html>

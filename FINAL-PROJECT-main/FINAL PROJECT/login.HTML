@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ds9icar9t/image/upload/v1724175281/elv65cxcqqkw02yp4yox.png" alt="Logo">
+            </div>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="home-link">
+                    <button id="sub" style="color:black" onclick="return login()"> LOG IN</button>
+                </div>
+                <div class="social-signup">
+                    <p>or LOGIN with</p>
+                    <div class="social-icons">
+                        <a href="#" onclick="logInWithGoogle()"><img src="https://i.pinimg.com/564x/8b/56/31/8b563165d8293f0f0e5372cb8452e4dc.jpg" alt="Google"  width="50" height="50"></a>
+                       
+                    </div>
+                </div>
+                <div class="signup-link">
+                    <a href="signup.html">Don't have an account? SIGN UP</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script src="authent.js"></script>
+</html>

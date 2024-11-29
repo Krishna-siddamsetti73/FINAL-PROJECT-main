@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    padding-right: 30px;
+}
+
+#chatbox {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #007BFF; /* Top border */
+}
+
+#chatbox div {
+    margin-bottom: 10px;
+}
+
+#chatbox div:nth-child(odd) {
+    background-color: #f1f1f1; /* Light background for user messages */
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#chatbox div:nth-child(even) {
+    background-color: #007BFF; /* Bot messages */
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: right; /* Align bot messages to the right */
+}
+
+#userInput {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: calc(100% - 90px);
+    max-width: 320px;
+}
+
+#sendBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sendBtn:hover {
+    background-color: #0056b3;
+}

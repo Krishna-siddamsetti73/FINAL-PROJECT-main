@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Booking</title>
+    <link rel="stylesheet" href="bookings.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header"> <div class="name" ><h1 >FIXER</h1></div></div>
+        <div class="service-provider-card">
+            <div class="card-left">
+                <img id="provider-img" src="servicer.png" alt="Service Provider" class="provider-img">
+            </div>
+            <div class="card-right">
+                <h2 id="provider-name" class="provider-name">Provider Name</h2>
+                <p id="provider-email" class="provider-email">email@example.com</p>
+                <p id="provider-phone" class="provider-phone">+123456789</p>
+                <p id="provider-ratings" class="provider-ratings">Rating: ★★★★☆</p>
+
+                <div class="services">
+                    <h3>Select Services</h3>
+                    <div id="services-list">
+                        <!-- Services will be dynamically populated here -->
+                    </div>
+                    
+                </div>
+                <div class="time-range">
+                    <h3>Set Service Time</h3>
+                    <label for="service-start-time">Start Time: </label>
+                    <input type="datetime-local" id="service-start-time">
+                    
+                    <label for="service-duration">Service Duration (in hours): </label>
+                    <input type="number" id="serviceduration" min="1" max="12" value="0">
+                </div>
+                
+
+                <div class="total-price">
+                    ServiceTotal: <span id="total">0</span>
+                </div>
+                <div class="total-price">
+                    GrandTotal:   <span id="totalgr">0</span>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h3>Reviews</h3>
+            
+                <div id="reviews-container" class="reviews-container">
+                    <!-- Review cards will be added here dynamically -->
+                </div>
+          
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button  id="back-btn"  class="back-btn">Back</button>
+            <button id="continue-btn" class="continue-btn">Continue</button>
+        </div>
+    </div>
+
+    <!-- Include Firebase SDK and your custom JS -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="bookings.js"></script>
+</body>
+</html>

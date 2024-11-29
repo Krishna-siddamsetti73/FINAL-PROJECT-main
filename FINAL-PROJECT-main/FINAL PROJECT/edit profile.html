@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Edit Page</title>
+    <link rel="stylesheet" href="edit profile.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <h1>FIXER</h1>
+            </div>
+            <div class="user-profile">
+                <img src="https://res.cloudinary.com/ds9icar9t/image/upload/v1724175281/elv65cxcqqkw02yp4yox.png" alt="User Profile">
+                <div class="notification">
+                    <span>1</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="sidebar">
+                <button class="back-button">&larr;</button>
+            </div>
+            <div class="content">
+                <div class="profile-header">
+                    <div class="profile-photo">
+                        <img id="image"  alt="User Profile">
+                        <button class="change" id="change">Change Photo</button><a>#</a>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="edit-section">
+                        <h2>Edit</h2>
+                        <div class="edit-icon-container">
+                            <span class="edit-icon" id="edit-icon">&#9998;</span> <!-- Pencil icon -->
+                        </div>
+                        <form id="profile-form">
+                            <input type="text" id="mobile" placeholder="Mobile Number" disabled>
+                            <input type="email" id="email" placeholder="Email Address" disabled>
+                            
+                            <input type="text" id="name" placeholder="Name" disabled>
+                        </form>
+                    </div>
+                    <div class="personal-details">
+                        <h2>Personal Details (Optional)</h2>
+                        <form id="personal-details-form">
+                            <input type="date" id="birthday" placeholder="Birthday" disabled>
+                            <input type="text" id="gender" placeholder="Gender" disabled>
+                            <input type="text" id="married" placeholder="Married" disabled>
+                            <input type="text" id="second-number" placeholder="Second Number" disabled>
+                        </form>
+                    </div>
+                </div>
+                <button class="save-button" id="save-button" style="display: none; position: fixed; bottom: 20px; right: 20px;">Save</button>
+
+            </div>
+           
+        </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script defer src="profile.js"></script>
+</body>
+</html>
+

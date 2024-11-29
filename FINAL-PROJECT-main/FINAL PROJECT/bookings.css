@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-provider-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-left {
+    flex: 1;
+}
+
+.card-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.provider-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.provider-name, .provider-email, .provider-phone, .provider-ratings {
+    margin-bottom: 10px;
+}
+
+.services label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    text-align: right;
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.reviews-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.reviews-section ul {
+    list-style: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.back-btn, .continue-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: #cccccc;
+}
+
+.continue-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.reviews-container {
+    display: flex;  /* Use flexbox for horizontal layout */
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    padding: 10px;
+    white-space: nowrap;  /* Prevent items from wrapping */
+}
+
+.review-card {
+    background-color: #f9f9f9;  /* Card background color */
+    border: 1px solid #ddd;  /* Card border */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 15px;
+    margin-right: 30px;  /* Space between cards */
+    min-width: 400px; 
+    min-height: 70; /* Minimum width for each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+}
+
+.review-card p {
+    margin: 0;  /* Remove default margin for paragraphs */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: BLACK;
+  }
+  .name{
+    color: #f5f5f5;
+    align-content: center;
+    align-items: center;
+  }
+

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: BLACK;
+  }
+  .name{
+    color: #f5f5f5;
+  }
+  
+  .back-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .notification-icon {
+    font-size: 24px;
+    color:black; /* Orange */
+    padding-left: 1150px;
+  }
+  
+
+  
+  .order-summary {
+    margin-bottom: 10px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .order-summary h2 {
+    color: #333;
+  }
+  
+  .amount {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+  
+  .customer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chef-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #ccc; /* Gray border */
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-direction: row; /* Spreads the options horizontally with space between */
+    gap: 100px; /* Optional: Adds some space between the payment options */
+    margin: 20px ; /* Adds margin to the payment methods container */
+  }
+  
+  .payment-option {
+    display: flex;
+    flex-direction: column; /* Aligns the image and text vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center;
+    padding: 60px;
+  }
+  
+  .payment-option img {
+    width: 100px; /* Adjust the size of the images as needed */
+    height: auto;
+  }
+  
+  .payment-option p {
+    margin-top: 10px; /* Adds space between the image and the text */
+  }
+  
+  
+  .service-info {
+    margin-top: 20px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .service-info p {
+    color: #666;
+  }
+  
+  .estimated-time {
+    margin-top: 10px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .estimated-time p {
+    color: #666;
+  }
+  
+  .time {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+  /* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.qr-image {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  align-self: center;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}

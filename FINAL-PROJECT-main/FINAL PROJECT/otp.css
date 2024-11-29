@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: -20vh;
+}
+
+.login-section {
+    background-color: #f2f2f2;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-section .logo img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.login-box button:hover {
+    background-color: #333;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.submit-btn button:hover {
+    background-color: #555;
+}
+
+.promo-section {
+    width: 85%;
+    background: url('promo-image.png') no-repeat center center;
+    background-size: cover;
+
+}

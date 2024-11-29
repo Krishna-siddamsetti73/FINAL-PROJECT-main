@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+		<a href="home.html"><span><button type="button" class="btn btn-outline-dark">Back</button></span></a>
+        <h1 class="text-2xl font-bold mx-4">Transportation Services</h1>
+        <div class="flex-grow"></div>
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Profile Dropdown</title>
+			<div class="notification-icon" style="width:2px;"class="border border-border rounded-lg p-2 ">
+			  <i class="bi bi-bell"></i>
+			</div>
+			<script src="https://cdn.tailwindcss.com"></script>
+			<style>
+				.dropdown-content {
+					display: none;
+					position: absolute;
+					top: 100%;
+					right: 0;
+					background-color: #f9f9f9;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					z-index: 1;
+					padding: 10px;
+					border-radius: 0.375rem;
+					width: 200px;
+				}
+		
+				.dropdown:hover .dropdown-content {
+					display: block;
+				}
+		
+				.dropdown-content a {
+					display: block;
+					padding: 8px 12px;
+					text-decoration: none;
+					color: black;
+					border-bottom: 1px solid #eaeaea;
+				}
+		
+				.dropdown-content a:hover {
+					background-color: #f1f1f1;
+				}
+		
+				.profile-img {
+					cursor: pointer;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+				}
+			</style>
+		</head>
+		<body class="bg-gray-100 p-4">
+		
+			<div class="flex justify-end items-center">
+				<div class="dropdown relative">
+					<img src="https://res.cloudinary.com/ds9icar9t/image/upload/v1724175281/elv65cxcqqkw02yp4yox.png" class="profile-img" alt="Profile Image">
+		
+					<!-- Dropdown Content -->
+					<div class="dropdown-content bg-white rounded shadow-lg">
+						<div class="flex items-center p-4">
+							<img src="https://res.cloudinary.com/ds9icar9t/image/upload/v1724175281/elv65cxcqqkw02yp4yox.png" class="w-10 h-10 rounded-full mr-3" alt="User Profile">
+							<div>
+								<p class="font-semibold">User</p>
+								<a href="edit profile.html" class="text-blue-600 text-sm">Edit Profile</a>
+							</div>
+						</div>
+						<a href="payment.html">Payment Settings</a>
+						<a href="booking.html">Bookings</a>
+						<a href="service tracking.html">Service Tracking</a>
+						<a href="customercare.html">Customer Care</a>
+						<a href="logout.html" class="text-red-600">Logout</a>
+					</div>
+				</div>
+			</div>
+		
+		</body>
+		</html>
+	</div>
+	  </header>
+    </div>
+    
+    <div class="mb-4">
+        <input type="text" placeholder="search for service categories, servicers" class="w-full p-2 border rounded-lg" />
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/564x/77/e3/f1/77e3f1fead50aad8f9aebff814e76dd9.jpg" alt="House Cleaning" class="w-full h-40 object-cover" />
+            <div class="p-4">
+                <h2 class="font-semibold text-lg">Personal Vehicle Services</h2>
+            </div>
+        </div>
+  </body>
+</html>
